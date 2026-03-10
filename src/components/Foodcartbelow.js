@@ -2,10 +2,13 @@
 
 function Foodcartbelow({fooddatatwo}){
     return (
-        <>
-            <img className="w-36 h-45" src={"https://media-assets.swiggy.com/swiggy/image/upload/"+fooddatatwo?.imageId}></img>
-            {/* <h1>{fooddatatwo.action.text}</h1> */}
-        </>
+        <div className="flex-none">
+        <a href={fooddatatwo?.action?.link} target="_blank">
+            <img className="w-36 h-45 object-cover" src={"https://media-assets.swiggy.com/swiggy/image/upload/"+fooddatatwo?.imageId}></img>
+            <h1 className="text-center">{fooddatatwo.action.text}</h1>
+            </a>
+            </div>
+        
     )
 }
 
