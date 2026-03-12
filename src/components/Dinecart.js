@@ -12,7 +12,7 @@ return(
         </div>
         
         <div className="flex justify-between font-medium text-sm text-gray-500 px-2">
-            <h1>{dinedata?.info?.cuisines}</h1>
+            <h1>{dinedata?.info?.cuisines.join(",")}</h1>
             <h1>{dinedata.info.costForTwo}</h1>
         </div>
 

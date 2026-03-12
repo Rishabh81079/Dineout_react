@@ -4,9 +4,15 @@ import Foodcart from "./Foodcart"
 import Foodcartbelow from "./Foodcartbelow"
 import { Dineout } from "../utilities/Dineout.js"
 import Dinecart from "./Dinecart.js"
+import Restaurants from "./Restaurants.js"
+import Restcard from "./Restcard.js"
+import Header from "./Header.js"
+
 
 function Main(){
     return(
+        <>
+        <Header></Header>
         <div className="container mx-auto w-[80%] mt-30 font-bold">
         <h1 className="text-2xl mb-10">Order our best food options</h1>
         <div className="flex container mx-auto gap-3 overflow-x-auto [scrollbar-width:none] [-ms-overflow-style:none]">
@@ -33,7 +39,9 @@ function Main(){
         })
         }
         </div>
+
         </div>
+        </>
     )
 }
 
